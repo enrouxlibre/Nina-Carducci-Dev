@@ -192,19 +192,6 @@
       .carousel-indicators .active {
         opacity: 1;
       }
-
-      .visually-hidden,
-      .visually-hidden-focusable:not(:focus):not(:focus-within) {
-        position: absolute !important;
-        width: 1px !important;
-        height: 1px !important;
-        padding: 0 !important;
-        margin: -1px !important;
-        overflow: hidden !important;
-        clip: rect(0, 0, 0, 0) !important;
-        white-space: nowrap !important;
-        border: 0 !important;
-      }
     </style>
     <link
       rel="preload"
@@ -344,7 +331,7 @@
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span hidden>Previous</span>
           </button>
           <button
             class="carousel-control-next"
@@ -353,7 +340,7 @@
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span hidden>Next</span>
           </button>
         </div>
       </div>
